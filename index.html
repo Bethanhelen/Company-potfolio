@@ -13,6 +13,7 @@
         <div class="logo">
           <h2>LOGO</h2>
         </div>
+
         <div class="menu">
             <ul>
                 <li><a href="index.html">HOME</a></li>
@@ -23,7 +24,12 @@
             </ul>
         </div>
 
-        <i class="fa fa-bars"></i>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a> 
+       
     </header>
 
     <div class="links">
@@ -48,7 +54,15 @@
        </div>
     </div>
 
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
 
+const menu = document.getElementsByClassName('menu')[0]
+
+toggleButton.addEventListener('click', () => {
+   menu.classList.toggle('active')
+})
+    </script>
     <script src="app.js"></script>
 </body>
 </html>

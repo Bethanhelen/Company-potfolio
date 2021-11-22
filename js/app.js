@@ -1,9 +1,7 @@
-const btn = document.querySelector('i');
-const menu = document.querySelector('.menu');
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
 
-function bar()
-{
-   menu.classList.toggle('menu-toggle')
-}
+const menu = document.getElementsByClassName('menu')[0]
 
-btn.addEventListener('click', bar);
+toggleButton.addEventListener('click', () => {
+   menu.classList.toggle('active')
+})
